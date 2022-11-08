@@ -104,7 +104,7 @@
         }, 10);
       }
 
-      const showAvatar = (onDone) => {
+      /*const showAvatar = (onDone) => {
         const avatar = document.querySelector("#avatar");
         let z = -0.3;
         const id = setInterval(() => {
@@ -115,7 +115,7 @@
           }
           avatar.setAttribute("position", "0 -0.25 " + z);
         }, 10);
-      }
+      }*/
 
       AFRAME.registerComponent('mytarget', {
         init: function () {
@@ -243,7 +243,7 @@
           <img id="coffeemachine-preview" src="./assets/card-example/portfolio/coffeemachine-preview.png" />
           <img id="peak-preview" src="./assets/card-example/portfolio/peak-preview.png" />
           
-          <a-asset-item id="avatarModel" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.0.0/examples/image-tracking/assets/card-example/softmind/scene.gltf"></a-asset-item>
+          <!--<a-asset-item id="avatarModel" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.0.0/examples/image-tracking/assets/card-example/softmind/scene.gltf"></a-asset-item>-->
         </a-assets>
 
         <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;" raycaster="far: 10000; objects: .clickable">
