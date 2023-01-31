@@ -64,7 +64,7 @@
         portfolio.setAttribute("visible", true);
 
         const showPortfolioItem = (item) => {
-          for (let i = 0; i <= 3; i++) {
+          for (let i = 0; i <= 9; i++) {
             document.querySelector("#portfolio-item" + i).setAttribute("visible", i === item);
           }
         }
@@ -75,11 +75,11 @@
             portfolioLeftButton.setAttribute("visible", true);
             portfolioRightButton.setAttribute("visible", true);
             portfolioLeftButton.addEventListener('click', () => {          
-              currentItem = (currentItem - 1 + 4) % 4;
+              currentItem = (currentItem - 1 + 10) % 10;
               showPortfolioItem(currentItem);
             });
             portfolioRightButton.addEventListener('click', () => {
-              currentItem = (currentItem + 1) % 4;
+              currentItem = (currentItem + 1) % 10;
               showPortfolioItem(currentItem);
             });
 
@@ -243,6 +243,12 @@
           <img id="coffeemachine-preview" src="./assets/card-example/portfolio/coffeemachine-preview.png" />
           <img id="peak-preview" src="./assets/card-example/portfolio/peak-preview.png" />
           <img id="foto1" src="./assets/card-example/portfolio/foto1.png" />
+          <img id="foto2" src="./assets/card-example/portfolio/foto2.png" />
+          <img id="foto3" src="./assets/card-example/portfolio/foto3.png" />
+          <img id="foto4" src="./assets/card-example/portfolio/foto4.png" />
+          <img id="foto5" src="./assets/card-example/portfolio/foto5.png" />
+          <img id="foto6" src="./assets/card-example/portfolio/foto6.png" />
+          <img id="foto7" src="./assets/card-example/portfolio/foto7.png" />
           
           <!--<a-asset-item id="avatarModel" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.0.0/examples/image-tracking/assets/card-example/softmind/scene.gltf"></a-asset-item>-->
         </a-assets>
@@ -269,7 +275,31 @@
               </a-image>
             </a-entity>
             <a-entity id="portfolio-item3" visible=false>
-              <a-image class="clickable" src="#peak-preview" alpha-test="0.5" position="0 0 0" height="1.6" width="1.2">
+              <a-image class="clickable" src="#foto2" alpha-test="0.5" position="0 0 0" height="1.6" width="1.2">
+              </a-image>
+            </a-entity>
+            <a-entity id="portfolio-item4" visible=false>
+              <a-image class="clickable" src="#foto3" alpha-test="0.5" position="0 0 0" height="1.6" width="1.2">
+              </a-image>
+            </a-entity>
+            <a-entity id="portfolio-item5" visible=false>
+              <a-image class="clickable" src="#foto4" alpha-test="0.5" position="0 0 0" height="1.6" width="1.2">
+              </a-image>
+            </a-entity>
+            <a-entity id="portfolio-item6" visible=false>
+              <a-image class="clickable" src="#foto5" alpha-test="0.5" position="0 0 0" height="1.6" width="1.2">
+              </a-image>
+            </a-entity>
+            <a-entity id="portfolio-item7" visible=false>
+              <a-image class="clickable" src="#foto6" alpha-test="0.5" position="0 0 0" height="1.6" width="1.2">
+              </a-image>
+            </a-entity>
+            <a-entity id="portfolio-item8" visible=false>
+              <a-image class="clickable" src="#foto7" alpha-test="0.5" position="0 0 0" height="1.6" width="1.2">
+              </a-image>
+            </a-entity>
+            <a-entity id="portfolio-item9" visible=false>
+              <a-image class="clickable" src="#foto8" alpha-test="0.5" position="0 0 0" height="1.6" width="1.2">
               </a-image>
             </a-entity>
 
