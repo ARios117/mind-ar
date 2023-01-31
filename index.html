@@ -74,12 +74,12 @@
             clearInterval(id);
             portfolioLeftButton.setAttribute("visible", true);
             portfolioRightButton.setAttribute("visible", true);
-            portfolioLeftButton.addEventListener('click', () => {
-              currentItem = (currentItem + 1) % 4;
+            portfolioLeftButton.addEventListener('click', () => {          
+              currentItem = (currentItem - 1 + 4) % 4;
               showPortfolioItem(currentItem);
             });
             portfolioRightButton.addEventListener('click', () => {
-              currentItem = (currentItem - 1 + 4) % 4;
+              currentItem = (currentItem + 1) % 4;
               showPortfolioItem(currentItem);
             });
 
