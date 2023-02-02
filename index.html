@@ -64,7 +64,7 @@
         portfolio.setAttribute("visible", true);
 
         const showPortfolioItem = (item) => {
-          for (let i = 0; i <= 12; i++) {
+          for (let i = 0; i <= 11; i++) {
             document.querySelector("#portfolio-item" + i).setAttribute("visible", i === item);
           }
         }
@@ -75,11 +75,11 @@
             portfolioLeftButton.setAttribute("visible", true);
             portfolioRightButton.setAttribute("visible", true);
             portfolioLeftButton.addEventListener('click', () => {          
-              currentItem = (currentItem - 1 + 13) % 13;
+              currentItem = (currentItem - 1 + 12) % 12;
               showPortfolioItem(currentItem);
             });
             portfolioRightButton.addEventListener('click', () => {
-              currentItem = (currentItem + 1) % 13;
+              currentItem = (currentItem + 1) % 12;
               showPortfolioItem(currentItem);
             });
 
